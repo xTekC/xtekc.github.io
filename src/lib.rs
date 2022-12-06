@@ -10,7 +10,7 @@
 //!
 //! Aside from my work experience, I am also interested in content creation and am currently working on creating video content for YouTube and writing for blogs. I am also interested in participating in a podcast to discuss educational topics and am currently learning the German language.
 
-/// Open Source Developer (1+ Years)
+/// Open Source Developer (2+ Years)
 pub mod open_source_exp {}
 
 /// Production Engineer (10+ Years)
