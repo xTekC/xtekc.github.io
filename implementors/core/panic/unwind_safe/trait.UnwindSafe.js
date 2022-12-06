@@ -1,3 +1,3 @@
-(function() {var implementors = {};
-implementors["xTekC"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.64.0/core/panic/unwind_safe/trait.UnwindSafe.html\" title=\"trait core::panic::unwind_safe::UnwindSafe\">UnwindSafe</a> for <a class=\"struct\" href=\"xTekC/struct.Certifications.html\" title=\"struct xTekC::Certifications\">Certifications</a>","synthetic":true,"types":["xTekC::Certifications"]}];
-if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
+(function() {var implementors = {
+"xTekC":[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.65.0/core/panic/unwind_safe/trait.UnwindSafe.html\" title=\"trait core::panic::unwind_safe::UnwindSafe\">UnwindSafe</a> for <a class=\"struct\" href=\"xTekC/struct.Certifications.html\" title=\"struct xTekC::Certifications\">Certifications</a>",1,["xTekC::Certifications"]]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

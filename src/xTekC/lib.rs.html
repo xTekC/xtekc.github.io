@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../xTekC/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../xTekC/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../xTekC/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../normalize.css"><link rel="stylesheet" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../ayu.css" disabled><link rel="stylesheet" href="../../dark.css" disabled><link rel="stylesheet" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../xTekC/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../xTekC/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../xTekC/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -56,63 +56,70 @@
 <span id="56">56</span>
 <span id="57">57</span>
 <span id="58">58</span>
-</pre><pre class="rust"><code><span class="doccomment">//! &amp;nbsp; [Github](https://github.com/xTekC) &amp;nbsp; [Twitter](https://twitter.com/xTekC) &amp;nbsp; [Blog](https://xtekc.hashnode.dev)</span>
-<span class="doccomment">//!</span>
-<span class="doccomment">//! Hello, I am xTekC.</span>
-<span class="doccomment">//!</span>
-<span class="doccomment">//! Interests:</span>
-<span class="doccomment">//! - Linux</span>
-<span class="doccomment">//! - Rust</span>
-<span class="doccomment">//! - Privacy</span>
-<span class="doccomment">//! - Security</span>
+<span id="59">59</span>
+<span id="60">60</span>
+<span id="61">61</span>
+<span id="62">62</span>
+</pre><pre class="rust"><code><span class="doccomment">//! &amp;nbsp; [Github](https://github.com/xTekC) &amp;nbsp; [Twitter](https://twitter.com/xTekC) &amp;nbsp; [Blog](https://xtekc.hashnode.dev)
+//!
+//! Hello, I am xTekC.
+//!
+//! As an open source developer, I have a passion for creating software that is efficient, elegant, and secure. My experience with Rust, Bash, and C, along with my knowledge of data structures and algorithms, has allowed me to contribute to a variety of open source projects and create innovative solutions for complex problems.
+//!
+//! In addition to my technical skills, I have also proven myself as a strong leader and team player. As a team lead for over 30 associates, I have implemented initiatives that have improved departments&#39; productivity, reduced material costs, and enhanced the safety and well-being of associates within the company.
+//!
+//! My interest in programming and security has driven me to explore ways to create security programs that protect the privacy and security of users and systems. I am always looking for new challenges and opportunities to grow as a developer and make a positive impact on the organization I am a part of.
+//!
+//! Aside from my work experience, I am also interested in content creation and am currently working on creating video content for YouTube and writing for blogs. I am also interested in participating in a podcast to discuss educational topics and am currently learning the German language.
 
-<span class="doccomment">/// Open Source Developer (2+ Years)</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">open_source_exp</span> {}
+/// Open Source Developer (1+ Years)
+</span><span class="kw">pub mod </span>open_source_exp {}
 
-<span class="doccomment">/// Production Engineer (10+ Years)</span>
-<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">production_engineer_exp</span> {}
+<span class="doccomment">/// Production Engineer (10+ Years)
+</span><span class="kw">pub mod </span>production_engineer_exp {}
 
-<span class="doccomment">/// Rust</span>
-<span class="attribute">#[<span class="ident">macro_export</span>]</span>
-<span class="macro">macro_rules!</span> <span class="ident">Rust</span> {
+<span class="doccomment">/// Rust
+</span><span class="attribute">#[macro_export]
+</span><span class="macro">macro_rules! </span>Rust {
     () =&gt; {};
 }
 
-<span class="doccomment">/// Bash</span>
-<span class="attribute">#[<span class="ident">macro_export</span>]</span>
-<span class="macro">macro_rules!</span> <span class="ident">Bash</span> {
+<span class="doccomment">/// Bash
+</span><span class="attribute">#[macro_export]
+</span><span class="macro">macro_rules! </span>Bash {
     () =&gt; {};
 }
 
-<span class="doccomment">/// C</span>
-<span class="attribute">#[<span class="ident">macro_export</span>]</span>
-<span class="macro">macro_rules!</span> <span class="ident">C</span> {
+<span class="doccomment">/// C
+</span><span class="attribute">#[macro_export]
+</span><span class="macro">macro_rules! </span>C {
     () =&gt; {};
 }
 
-<span class="doccomment">/// Certification Road-Map</span>
-<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">Certifications</span> {
-   <span class="kw">pub</span> <span class="ident">LinuxPlus</span>: <span class="ident">String</span>,
-   <span class="kw">pub</span> <span class="ident">ServerPlus</span>: <span class="ident">String</span>,
-   <span class="kw">pub</span> <span class="ident">CloudPlus</span>: <span class="ident">String</span>,
-   <span class="kw">pub</span> <span class="ident">NetworkPlus</span>: <span class="ident">String</span>,
-   <span class="kw">pub</span> <span class="ident">SecurityPlus</span>: <span class="ident">String</span>,
-   <span class="kw">pub</span> <span class="ident">CysaPlus</span>: <span class="ident">String</span>,
-   <span class="kw">pub</span> <span class="ident">PentestPlus</span>: <span class="ident">String</span>,
-   <span class="kw">pub</span> <span class="ident">CaspPlus</span>: <span class="ident">String</span>,
+<span class="doccomment">/// Certification Road-Map
+</span><span class="kw">pub struct </span>Certifications {
+   <span class="kw">pub </span>LinuxPlus: String,
+   <span class="kw">pub </span>ServerPlus: String,
+   <span class="kw">pub </span>CloudPlus: String,
+   <span class="kw">pub </span>NetworkPlus: String,
+   <span class="kw">pub </span>SecurityPlus: String,
+   <span class="kw">pub </span>CysaPlus: String,
+   <span class="kw">pub </span>PentestPlus: String,
+   <span class="kw">pub </span>CaspPlus: String,
 }
 
-<span class="doccomment">/// Comptia Linux+ (pending)</span>
-<span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CERT01</span>: <span class="kw-2">&amp;</span><span class="ident">str</span> <span class="op">=</span> <span class="string">&quot;Linux+&quot;</span>;
+<span class="doccomment">/// Comptia Linux+ (pending)
+</span><span class="kw">pub const </span>CERT01: <span class="kw-2">&amp;</span>str = <span class="string">&quot;Linux+&quot;</span>;
 
-<span class="doccomment">/// A markdown to html compiler</span>
-<span class="doccomment">/// [github.com/xTekC/mduc](https://github.com/xTekC/mduc)</span>
-<span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">mduc</span>() {}
+<span class="doccomment">/// A markdown to html compiler
+/// [github.com/xTekC/mduc](https://github.com/xTekC/mduc)
+</span><span class="kw">pub fn </span>mduc() {}
 
-<span class="doccomment">/// Delete data from shell history file(s)</span>
-<span class="doccomment">/// [github.com/xTekC/shdel](https://github.com/xTekC/shdel)</span>
-<span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">shdel</span>() {}
+<span class="doccomment">/// Delete data from shell history file(s)
+/// [github.com/xTekC/shdel](https://github.com/xTekC/shdel)
+</span><span class="kw">pub fn </span>shdel() {}
 
-<span class="comment">// Soft Skills</span>
-</code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="xTekC" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
+<span class="doccomment">/// Asynchronous Password Generator
+/// [github.com/xTekC/passgen](https://github.com/xTeKc/passgen)
+</span><span class="kw">pub fn </span>passgen() {}</code></pre></div>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="xTekC" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.65.0 (897e37553 2022-11-02)" ></div></body></html>
