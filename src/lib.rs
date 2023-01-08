@@ -34,20 +34,14 @@ macro_rules! C {
     () => {};
 }
 
-/// Certification Road-Map
+/// 2023 Certifications Road-Map
 pub struct Certifications {
-   pub LinuxPlus: String,
-   pub ServerPlus: String,
-   pub CloudPlus: String,
-   pub NetworkPlus: String,
-   pub SecurityPlus: String,
-   pub CysaPlus: String,
-   pub PentestPlus: String,
-   pub CaspPlus: String,
+   pub networkplus: String,
+   pub securityplus: String,
+   pub linuxplus: String,
+   pub cysaplus: String,
+   pub pentestplus: String,
 }
-
-/// Comptia Linux+ (pending)
-pub const CERT01: &str = "Linux+";
 
 /// A markdown to html compiler
 /// [github.com/xTekC/mduc](https://github.com/xTekC/mduc)
