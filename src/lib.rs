@@ -16,6 +16,18 @@ pub mod open_source_exp {}
 /// Production Engineer (10+ Years)
 pub mod production_engineer_exp {}
 
+/// Zig
+#[macro_export]
+macro_rules! Zig {
+    () => {};
+}
+
+/// C
+#[macro_export]
+macro_rules! C {
+    () => {};
+}
+
 /// Rust
 #[macro_export]
 macro_rules! Rust {
@@ -28,19 +40,10 @@ macro_rules! Bash {
     () => {};
 }
 
-/// C
-#[macro_export]
-macro_rules! C {
-    () => {};
-}
-
 /// 2023 Certifications Road-Map
 pub struct Certifications {
-   pub networkplus: String,
-   pub securityplus: String,
-   pub linuxplus: String,
-   pub cysaplus: String,
-   pub pentestplus: String,
+   pub network_plus: String,
+   pub security_plus: String,
 }
 
 /// A markdown to html compiler
